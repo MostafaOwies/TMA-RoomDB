@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 @Entity
 data class ItemsEntity(
     @PrimaryKey(autoGenerate = false)
-    var id: String = "",
+    var menuItemId: String = "",
     var name: String = "",
     var nameAr: String = "",
     var price: Double = 0.0,
