@@ -8,8 +8,8 @@ import test.microsoft.com.tmaroomdb.entities.order.OrdersEntity
 data class OrderAndItem(
     @Embedded val order: OrdersEntity,
     @Relation(
-        parentColumn ="menuItemId",
-        entityColumn ="menuItemId"
+        parentColumn ="orderId",
+        entityColumn ="orderId"
     )
     val item: List<ItemsEntity>
 )

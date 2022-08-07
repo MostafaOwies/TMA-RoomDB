@@ -7,8 +7,8 @@ import test.microsoft.com.tmaroomdb.entities.menu.MenuIngredientsEntity
 @Entity
 data class OrdersEntity(
     @PrimaryKey(autoGenerate = false)
-    var menuItemId: String = "", // Menu item ID
-
+    var orderId: String = "",
+    var menuItemId: String = "",
 
     var QTY: Int = 0,
     var QTY_shared: Double = 0.0,
@@ -29,26 +29,6 @@ data class OrdersEntity(
     var ing: MutableList<MenuIngredientsEntity>? = null,
     var total_price: Double = 0.0,
     var total_price_shared: Double = 0.0,
-    var uid: String = "", // Order item ID
 
-    val status: Map<String, String>? = null,
-
-    var statusKey: String? = null,
-
-    var statusColor: Int = 0,
-
-
-// Extra required data
-    var orderId: String = "",
-    var orderNumber: Int = 0,
-    var tableNumber: Int = 0,
-    var phoneNumber: String = "",
-    var ros: String = "",
-    var isPaid: String = "",
-
-//    var isSelected: Boolean = false, // Selected for sharing process
-//    var showShareIcon: Boolean = false
-
-    var splitOrder: Boolean = false // Used for show or hide checkbox (in split process)
 
 )
