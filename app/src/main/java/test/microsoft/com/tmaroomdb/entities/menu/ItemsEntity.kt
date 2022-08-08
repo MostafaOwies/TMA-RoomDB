@@ -14,13 +14,10 @@ data class ItemsEntity(
     var orderId: String = "",
 
     var menuId: String = "",
-    var ingredients: MutableList<String> = arrayListOf(),
-    var options: MutableList<String> = arrayListOf(),
     var maxIng: Int = 0,
     var minIng: Int = 0,
     var priority: Int = 0,
     var notes: String = "",
-    var availability: Boolean = false,
     var serving: String = "",
     var servingAr: String = ""
 )
